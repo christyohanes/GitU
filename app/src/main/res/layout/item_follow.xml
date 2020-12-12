@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/small_to_normal"
+    android:background="@drawable/bg_rect_border_1px_primary">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/cv_user_item_follow"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="@dimen/small_to_normal"
+        android:layout_marginTop="@dimen/small_to_normal"
+        android:layout_marginBottom="@dimen/small_to_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/default_photo" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_username_item_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/small_to_normal"
+        android:background="@drawable/bg_rect_rad_8"
+        android:fontFamily="@font/rubik_medium"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/cv_user_item_follow"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="\@rafaaliandra" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_item_comp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

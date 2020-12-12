@@ -1,0 +1,17 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">GitU</string>
+    <!--tab layout-->
+    <string name="tab_text_1">Following</string>
+    <string name="tab_text_2">Followers</string>
+
+    <string name="no_followers">No one has followed</string>
+    <string name="no_following">Not following anyone</string>
+    <string name="text_following">Following</string>
+    <string name="text_repository">Repository</string>
+    <string name="text_followers">Followers</string>
+    <string name="credit">By Johannes</string>
+    <string name="see_full">See detail acount</string>
+    <string name="desc_main">Please use the user search feature below!</string>
+    <string name="name">Johannes Christian</string>
+    <string name="hello">Hello,</string>
+</resources>

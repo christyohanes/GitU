@@ -1,0 +1,17 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">GitU</string>
+    <!--tab layout-->
+    <string name="tab_text_1">Mengikuti</string>
+    <string name="tab_text_2">Pengikut</string>
+
+    <string name="no_followers">Tidak ada pengikut</string>
+    <string name="no_following">Tidak mengikuti</string>
+    <string name="text_following">Mengikuti</string>
+    <string name="text_repository">Penyimpanan</string>
+    <string name="text_followers">Pengikut</string>
+    <string name="credit">By Johannes</string>
+    <string name="see_full">Lihat selengkapnya</string>
+    <string name="desc_main">Gunakan fitur pencarian user dibawah ini ya!</string>
+    <string name="name">Johannes Christian</string>
+    <string name="hello">Halo,</string>
+</resources>
