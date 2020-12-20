@@ -2,7 +2,6 @@ package com.jstark.gitu.ui
 
 import android.content.Intent
 import android.os.Bundle
-import android.provider.Settings
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -34,7 +33,8 @@ class MainActivity : AppCompatActivity(), GitUserItemListener, SearchView.OnQuer
         rv_git_user_main.isFocusable = false
         rv_git_user_main.setHasFixedSize(true)
         sv_user.setOnQueryTextListener(this)
-        btn_change_lang.setOnClickListener(this)
+        btn_next_favorite.setOnClickListener(this)
+        btn_next_settings.setOnClickListener(this)
     }
 
     override fun onQueryTextSubmit(query: String?): Boolean {
@@ -116,7 +116,9 @@ class MainActivity : AppCompatActivity(), GitUserItemListener, SearchView.OnQuer
     }
 
     override fun onClick(v: View?) {
-        val mIntent = Intent(Settings.ACTION_LOCALE_SETTINGS)
-        startActivity(mIntent)
+        when (v?.id) {
+            R.id.btn_next_favorite -> startActivity(Intent(this, FavoriteActivity::class.java))
+            R.id.btn_next_settings -> startActivity(Intent(this, SettingsActivity::class.java))
+        }
     }
 }

@@ -27,11 +27,11 @@
         android:background="@drawable/bg_rect_rad_8"
         android:fontFamily="@font/rubik_medium"
         android:padding="4dp"
-        android:text="\@rafaaliandra"
         android:textColor="@color/colorWhite"
         android:textSize="@dimen/text_large"
         app:layout_constraintStart_toEndOf="@id/cv_user_item"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="\@rafaaliandra" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tv_see_more_item"

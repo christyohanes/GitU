@@ -1,11 +1,16 @@
 package com.jstark.gitu.ui
 
+import android.content.ContentValues
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.jstark.gitu.R
 import com.jstark.gitu.adapter.SectionsPagerAdapter
+import com.jstark.gitu.db.DatabaseContract.UserColumns.Companion.CONTENT_URI
+import com.jstark.gitu.db.DatabaseContract.UserColumns.Companion.PHOTO
+import com.jstark.gitu.db.DatabaseContract.UserColumns.Companion.USERNAME
 import com.jstark.gitu.model.GitUser
 import com.jstark.gitu.model.GitUserDetail
 import com.loopj.android.http.AsyncHttpClient
@@ -16,11 +21,18 @@ import kotlinx.android.synthetic.main.activity_detail_git_user.*
 import kotlinx.android.synthetic.main.activity_main.*
 import org.json.JSONObject
 
-class DetailGitUserActivity : AppCompatActivity() {
+
+class DetailGitUserActivity : AppCompatActivity(), View.OnClickListener {
 
     companion object {
         const val EXTRA_USER = "extra_user"
     }
+
+    private lateinit var username: String
+
+    private lateinit var profilePhoto: String
+
+    private lateinit var urlWithUName: Uri
 
     private val sectionsPagerAdapter = SectionsPagerAdapter(this, supportFragmentManager)
 
@@ -29,6 +41,7 @@ class DetailGitUserActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail_git_user)
 
         initiateData()
+        btn_favorite.setOnClickListener(this)
     }
 
     private fun initiateUI(user: GitUserDetail) {
@@ -85,6 +98,11 @@ class DetailGitUserActivity : AppCompatActivity() {
 
                     initiateUI(user)
 
+                    username = usernameUser
+                    profilePhoto = photo
+
+                    urlWithUName = Uri.parse("$CONTENT_URI/$username")
+                    checkIsFavorite()
                 } catch (e: Exception) {
                     e.printStackTrace()
                 }
@@ -101,5 +119,25 @@ class DetailGitUserActivity : AppCompatActivity() {
                     .show()
             }
         })
+    }
+
+    override fun onClick(v: View?) {
+        insertFavUser()
+    }
+
+    private fun insertFavUser() {
+        btn_favorite.visibility = View.GONE
+        Toast.makeText(this, "$username telah masuk ke daftar favorit!", Toast.LENGTH_LONG).show()
+        val values = ContentValues()
+        values.put(USERNAME, username)
+        values.put(PHOTO, profilePhoto)
+        contentResolver.insert(CONTENT_URI, values)
+    }
+
+    private fun checkIsFavorite() {
+        val cursor = contentResolver.query(urlWithUName, null, null, null, null)
+        if (cursor != null) {
+            if (cursor.count > 0) btn_favorite.visibility = View.GONE
+        }
     }
 }

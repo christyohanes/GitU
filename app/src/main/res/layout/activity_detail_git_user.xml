@@ -221,4 +221,20 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btn_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/Love"
+        android:letterSpacing="0"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="bottom|end"
+        app:icon="@drawable/ic_love"
+        android:visibility="visible"
+        app:iconTint="@color/colorWhite"
+        android:backgroundTint="#ffb2b2" />
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
