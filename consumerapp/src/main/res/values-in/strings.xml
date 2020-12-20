@@ -1,0 +1,23 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">ConsumerApp</string>
+    <!--tab layout-->
+    <string name="tab_text_1">Mengikuti</string>
+    <string name="tab_text_2">Pengikut</string>
+
+    <string name="no_followers">Tidak ada pengikut</string>
+    <string name="no_following">Tidak mengikuti</string>
+    <string name="text_following">Mengikuti</string>
+    <string name="text_repository">Penyimpanan</string>
+    <string name="text_followers">Pengikut</string>
+    <string name="credit">By Johannes</string>
+    <string name="see_full">by Github</string>
+    <string name="desc_main">Berikut adalah list favorite usermu!</string>
+    <string name="name">Johannes Christian</string>
+    <string name="hello">Halo,</string>
+    <string name="user_removed">%1$s telah dihapus dari daftar favorite</string>
+    <string name="reminder_on">Pengingat nyala</string>
+    <string name="reminder_off">Pengingat mati</string>
+    <string name="title_notification">GitU App</string>
+    <string name="description_notification">Pencarian pengguna Github</string>
+    <string name="sub_title_notification">Hai, ayo temukan pengguna github sekarang!</string>
+</resources>

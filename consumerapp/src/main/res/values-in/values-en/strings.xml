@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">GitU</string>
+    <!--tab layout-->
+    <string name="tab_text_1">Following</string>
+    <string name="tab_text_2">Followers</string>
+
+    <string name="no_followers">No one has followed</string>
+    <string name="no_following">Not following anyone</string>
+    <string name="text_following">Following</string>
+    <string name="text_repository">Repository</string>
+    <string name="text_followers">Followers</string>
+    <string name="credit">By Johannes</string>
+    <string name="see_full">See detail acount</string>
+    <string name="desc_main">Please use the user search feature below!</string>
+    <string name="name">Johannes Christian</string>
+    <string name="hello">Hello,</string>
+    <string name="user_removed">%1$s removed from favorite list</string>
+    <string name="reminder_on">Reminder On</string>
+    <string name="reminder_off">Reminder Off</string>
+    <string name="title_notification">Find Github User</string>
+    <string name="description_notification">Let\'s find your github user!</string>
+    <string name="sub_title_notification">GitU</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3282B8</color>
+    <color name="colorPrimaryDark">#0F4C75</color>
+    <color name="colorPrimaryLight">#BBE1FA</color>
+    <color name="colorSecondaryLight">#34B6C2</color>
+    <color name="colorAccent">#4682BF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackSolid">#222222</color>
+    <color name="colorBlackNormal">#444444</color>
+    <color name="colorBlackLight">#666666</color>
+    <color name="colorBlackLighter">#888888</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorGrayNormal">#DADADA</color>
+    <color name="colorGrayDarker">#999999</color>
+    <color name="colorGrayLighter">#F8F8F8</color>
+    <color name="colorError">#E23C3C</color>
+    <color name="colorBlueLight">#A4DAFF</color>
+    <color name="colorSecondaryBlueLight">#EBF4FA</color>
+    <color name="colorDarkBlue">#0E6DAA</color>
+    <color name="colorBlueLightTransparent08">#14A4DAFF</color>
+    <color name="colorGrayDark">#6C6C6C</color>
+    <color name="colorGrayscaleDark">#BBBBBB</color>
+    <color name="colorGrayscaleLight">#EEEEEE</color>
+    <color name="colorGray">#777777</color>
+    <color name="colorWhiteGray">#FAFAFAFA</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorDarkPrimary">#0E6DAA</color>
+    <color name="colorGraySuva">#909090</color>
+    <color name="colorGrayDim">#646464</color>
+</resources>

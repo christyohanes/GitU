@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">GitU</string>
+
+    <!--tab layout-->
+    <string name="tab_text_1">Following</string>
+    <string name="tab_text_2">Followers</string>
+
+    <string name="no_followers">Tidak ada followers</string>
+    <string name="no_following">Tidak ada following</string>
+    <string name="text_following">Following</string>
+    <string name="text_repository">Repository</string>
+    <string name="text_followers">Follower</string>
+    <string name="credit">By Johannes</string>
+    <string name="see_full">Lihat selengkapnya</string>
+    <string name="desc_main">Gunakan fitur pencarian user dibawah ini ya!</string>
+    <string name="name">Johannes Christian</string>
+    <string name="hello">Halo,</string>
+    <string name="user_removed">%1$s telah dihapus dari daftar favorite</string>
+    <string name="reminder_on">Pengingat nyala</string>
+    <string name="reminder_off">Pengingat mati</string>
+    <string name="title_notification">Cari Pengguna Github</string>
+    <string name="description_notification">Ayo temukan user githubmu!</string>
+    <string name="sub_title_notification">GitU</string>
+</resources>
